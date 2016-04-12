@@ -1,0 +1,37 @@
+{
+   "licence":{
+      "name":"Mr Big Cheese",
+      "driverNumber": "ABC123CHEESE",
+      "photoUrl":"photo.png",
+      "dateOfBirth":"01.01.1971",
+      "dateOfIssue":"02.02.1990",
+      "dateOfExpiry":"03.03.2030",
+			"address":"89 Opera Gardens, London, W1A 1AA",
+
+      "entitlements": [
+        {
+          "category": "A",
+          "description": "motorbikes with a power output more than 35kW or a power to weight ratio more than 0.2kW/kg or motor tricycles with a power output more than 15kW",
+          "provisional": true
+        },
+        {
+          "category": "B",
+          "description": "You can drive vehicles up to 3,500kg Maximum Authorised Mass (MAM) with up to 8 passenger seats (with a trailer up to 750kg).",
+          "provisional": false
+        }
+      ],
+
+      "endorsements": [
+        {
+          "code": "SP30",
+          "points": 3,
+          "dateOfEndorsement": "2010-04-05T11:45:50+01:00"
+        },
+        {
+          "code": "MS20",
+          "points": 3,
+          "dateOfEndorsement": "2012-11-13T11:45:50+01:00"
+        }
+      ]
+   }
+}
