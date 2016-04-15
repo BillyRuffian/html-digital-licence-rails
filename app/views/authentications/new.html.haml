@@ -1,0 +1,23 @@
+= form_tag authentications_path do
+  .content-block-title Set a PIN code
+  .list-block
+    %ul
+      %li
+        .item-content
+          .item-inner
+            .item-title.label PIN Code
+            .item-input
+              -#%input{placeholder: 'foo', type: 'number', pattern: '[0-9]', inputmode: 'numberic'}
+              = password_field_tag 'pin', nil, in: 1111...9999, inputmode: 'numeric', pattern: '[0-9]*', placeholder: 'Your PIN code'
+      %li
+        .item-content
+          .item-inner
+            .item-title.label PIN Confirmation
+            .item-input
+              -#%input{placeholder: 'foo', type: 'number', pattern: '[0-9]', inputmode: 'numberic'}
+              = password_field_tag 'pin_confirm', nil, in: 1111...9999, inputmode: 'numeric', pattern: '[0-9]*', placeholder: 'Type your PIN again'
+
+  .list-block
+    %ul
+      %li
+        %a.item-link.list-button{ onclick: 'submit()' } foo

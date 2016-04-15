@@ -1,13 +1,19 @@
 var Controls = React.createClass({
 	shareCodeClicked: function() {
-		new Fingerprint2().get( function(result,components) {
-			console.log( result );
-			console.log( components );
-			post('/share_codes', {
-        fingerprint: result,
-        driverNumber: JSON.parse(localStorage.licenceData).licence.driverNumber
-      });
-		});
+		// new Fingerprint2().get( function(result,components) {
+		// 	console.log( result );
+		// 	console.log( components );
+		// 	post('/share_codes', {
+    //     fingerprint: result,
+    //     driverNumber: JSON.parse(localStorage.licenceData).licence.driverNumber
+    //   });
+		// });
+		
+		post( '/share_codes', {
+			driverNumber: JSON.parse(localStorage.licenceData).licence.driverNumber
+		} );
+		
+		console.log('share code clicked');
 	},
 
 	componentDidMount: function(){

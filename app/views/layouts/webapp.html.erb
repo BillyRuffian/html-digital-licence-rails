@@ -24,7 +24,14 @@
         <!-- Top Navbar-->
         <div class="navbar">
           <div class="navbar-inner">
-            <!-- We have home navbar without left link-->
+						<% if !@back_to.blank? %>
+							<div class="left">
+		            <a href="<%= @back_to %>" class="link">
+		            	<i class="icon icon-back"></i>
+		            	<span>Back</span>
+		            </a>
+				      </div>
+						<% end %>
             <div class="center sliding">HTML Licence Demo</div>
           </div>
         </div>

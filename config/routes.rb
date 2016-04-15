@@ -2,6 +2,10 @@ Rails.application.routes.draw do
 
   resource :webapps, only: [:show]
   resources :share_codes, only: [:create]
+  
+  resource :verify, controller: 'verify', only: [:show]
+  
+  resource :authentications
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
