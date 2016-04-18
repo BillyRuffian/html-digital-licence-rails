@@ -5,7 +5,8 @@ var Controls = React.createClass({
 			console.log( components );
 			post('/share_codes', {
         fingerprint: result,
-        driverNumber: JSON.parse(localStorage.licenceData).licence.driverNumber
+        driverNumber: JSON.parse(localStorage.licenceData).licence.driverNumber,
+        token: localStorage.token
       });
 		});
 	},

@@ -1,0 +1,22 @@
+.content-block
+  %p
+    Your PIN code has been recorded
+
+.list-block
+  %ul
+    %li
+      = link_to 'Continue', webapps_path, class: 'item-link list-button'
+
+
+:javascript
+  function storeToken() {
+    var token = "#{@token}";
+    if( token != null && token != "" ) {
+      localStorage.token = token
+    }
+  };
+
+  //$(document).ready(storeToken());
+  //$(document).on('page:load', storeToken());
+  document.addEventListener("page:load", function(event){storeToken();} );
+  document.addEventListener("DOMContentLoaded", function(event){storeToken();} );
