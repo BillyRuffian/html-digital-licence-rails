@@ -1,0 +1,15 @@
+%h1 Authentications#create
+%p Find me in app/views/authentications/create.html.haml
+
+:javascript
+  function storeToken() {
+    var token = "#{@token}";
+    if( token != null && token != "" ) {
+      localStorage.token = token
+    }
+  };
+
+  //$(document).ready(storeToken());
+  //$(document).on('page:load', storeToken());
+  document.addEventListener("page:load", function(event){storeToken();} );
+  document.addEventListener("DOMContentLoaded", function(event){storeToken();} );

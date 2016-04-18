@@ -1,0 +1,53 @@
+.content-block
+  %p
+    %p Content block about how you have to setup a pin
+
+= form_tag authentications_path, id: 'pin_form' do
+  .list-block
+    %ul
+      %li
+        .item-content
+          .item-inner
+            .item-title.label PIN Code
+            .item-input
+              = password_field_tag 'pin', nil, placeholder: 'Choose a PIN code', type: :numeric, pattern: '[0-9]*'
+      %li
+        .item-content
+          .item-inner
+            .item-title.label PIN Confirm
+            .item-input
+              = password_field_tag 'pin_confirmation', nil, placeholder: 'Re-enter your PIN to confirm', type: :numeric, pattern: '[0-9]*'
+
+  .list-block
+    %ul
+      %li
+        -# I realise click handers are obtrusive
+        %a.item-link.list-button{onclick:'validatePins()'} Continue
+
+:javascript
+  function validatePins(){
+    var pin = $('#pin')[0].value;
+    var pinConfirm = $('#pin_confirmation')[0].value;
+
+    if( pin != null
+        && /^[0-9]+$/.test(pin)
+        && pin.length >= 4
+        && pin == pinConfirm )
+    {
+      var hiddenDriverNumberField = document.createElement( "input" );
+      hiddenDriverNumberField.setAttribute( 'type', 'hidden' );
+      hiddenDriverNumberField.setAttribute( 'name', 'driverNumber' );
+      hiddenDriverNumberField.setAttribute( 'value', JSON.parse(localStorage.licenceData).licence.driverNumber );
+      $("#pin_form").append( hiddenDriverNumberField );
+      new Fingerprint2().get( function(result,components) {
+        var hiddenFingerprintField = document.createElement( "input" );
+        hiddenFingerprintField.setAttribute( 'type', 'hidden' );
+        hiddenFingerprintField.setAttribute( 'name', 'fingerprint' );
+        hiddenFingerprintField.setAttribute( 'value', result );
+        $("#pin_form").append( hiddenFingerprintField );
+        $("#pin_form").submit();
+  		});
+    } else {
+      myApp.alert( "Your PIN must be a number, at least 4 digits long and the same as the confirmation");
+    }
+  };
