@@ -1,5 +1,12 @@
-%h1 Authentications#create
-%p Find me in app/views/authentications/create.html.haml
+.content-block
+  %p
+    Your PIN code has been recorded
+
+.list-block
+  %ul
+    %li
+      = link_to 'Continue', webapps_path, class: 'item-link list-button'
+
 
 :javascript
   function storeToken() {
