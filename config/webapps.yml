@@ -1,0 +1,8 @@
+development:
+  secret: "just between us"
+
+test:
+  secret: "no secret"
+
+production:
+  secret: <%= ENV['WEBAPP_SECRET'] %>

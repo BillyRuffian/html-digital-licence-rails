@@ -1,0 +1,13 @@
+
+.content-block-title
+  Your share code
+.list-block
+  %ul
+    %li.item-content
+      .item-inner
+        %h2= @code
+
+.list-block
+  %ul
+    %li
+      = link_to 'Finish', webapps_path, class: 'item-link list-button'

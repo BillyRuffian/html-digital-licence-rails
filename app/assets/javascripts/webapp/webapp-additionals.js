@@ -1,5 +1,8 @@
 // Initialize your app
-var myApp = new Framework7();
+var myApp = new Framework7({
+  modalTitle: 'DVLA',
+  ajaxLinks: 'a.ajax'
+});
 
 // Export selectors engine
 var $$ = Dom7;
