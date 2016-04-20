@@ -1,5 +1,5 @@
 class AuthenticationsController < ApplicationController
-
+  protect_from_forgery except: [:check]
   layout 'webapp'
 
   def new
@@ -25,6 +25,8 @@ class AuthenticationsController < ApplicationController
     # TODO: ...and we need to revalidate our assertions here
 
     driver_number = params[:driverNumber]
+    fingerprint = params[:fingerprint]
+
     pin = params[:pin]
     user = nil
     if pin && driver_number
@@ -32,6 +34,7 @@ class AuthenticationsController < ApplicationController
     end
 
     if user
+      user.devices.find_or_create_by( fingerprint: fingerprint )
       redirect_to webapps_path
     else
       flash[:notice] = 'Wrong PIN'

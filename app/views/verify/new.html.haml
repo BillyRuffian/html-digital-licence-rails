@@ -1,0 +1,18 @@
+
+.content-block.center
+  = image_tag 'verifylogo.png', class: 'full-width'
+
+.content-block
+  %p
+    We need to check your identity with Verify
+
+.list-block
+  %ul
+    %li
+      = link_to 'Verify My Identity', '#', class: 'item-link list-button', onclick: 'verifyClicked()'
+
+:javascript
+  function verifyClicked()
+  {
+    post( '/verify');
+  }
