@@ -1,0 +1,31 @@
+- content_for :head do
+  = stylesheet_link_tag 'application'
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+
+- content_for :page_title do
+  GOV.UK - Digital Wallet
+
+-#- content_for :header_class do
+-#  with-proposition
+
+-#- content_for :proposition_header do
+-#  = render 'shared/proposition_menu'
+
+- content_for :content do
+  %main.wrapper
+    .content{ class: "#{controller_name} #{action_name}"}
+      %main#page-container
+        .phase-banner
+          %p
+            %strong.phase-tag ALPHA
+            %span This is a new service – your feedback will help us to improve it.
+
+        %main#page-container{role: 'main'}
+          .grid-row
+            .column-three-quarters
+              = yield
+            .column-quarter
+              = yield :sidebar
+
+= render template: 'layouts/govuk_template'
