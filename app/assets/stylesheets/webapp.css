@@ -13,3 +13,11 @@
  *= require_tree ./framework7
  *= require_self
  */
+
+.center {
+  text-align: center;
+}
+
+img.full-width {
+  width: 100%;
+}

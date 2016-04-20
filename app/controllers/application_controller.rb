@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
     rescue Exception => e
       puts '*** TOKEN NOT VERIFIED'
       puts e
-      redirect_to new_authentications_path
+      redirect_to new_verify_path
       return
     end
 
@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
       end
     else
       # unknown user
-      redirect_to new_authentications_path
+      redirect_to new_verify_path
       return
     end
   end

@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'authentications/new'
-
-  get 'authentications/create'
 
   resource :webapps, only: [:show]
   resources :share_codes, only: [:create]
   resource :authentications, only: [:create, :new] do
     post :check
   end
+  resource :verify, controller: :verify, only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

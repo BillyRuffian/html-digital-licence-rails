@@ -2,7 +2,7 @@
   %p
     %p Content about how you need to enter a PIN to continue
 
-= form_tag check_authentications_path, id: 'pin_form' do
+= form_tag '#', id: 'pin_form', onsubmit: 'submitPin()' do
   .list-block
     %ul
       %li
@@ -20,29 +20,23 @@
 
 :javascript
   function submitPin(){
+  console.log('xxx');
+    if( event != null ) {
+      event.preventDefault();
+    }
     var pin = $('#pin')[0].value;
 
     if( pin != null
         && /^[0-9]+$/.test(pin)
         && pin.length >= 4 )
     {
-      var hiddenDriverNumberField = document.createElement( "input" );
-      hiddenDriverNumberField.setAttribute( 'type', 'hidden' );
-      hiddenDriverNumberField.setAttribute( 'name', 'driverNumber' );
-      hiddenDriverNumberField.setAttribute( 'value', JSON.parse(localStorage.licenceData).licence.driverNumber );
-      $("#pin_form").append( hiddenDriverNumberField );
-      var hiddenTokenField = document.createElement( "input" );
-      hiddenTokenField.setAttribute( 'type', 'hidden' );
-      hiddenTokenField.setAttribute( 'name', 'token' );
-      hiddenTokenField.setAttribute( 'value', localStorage.token );
-      $("#pin_form").append( hiddenTokenField );
       new Fingerprint2().get( function(result,components) {
-        var hiddenFingerprintField = document.createElement( "input" );
-        hiddenFingerprintField.setAttribute( 'type', 'hidden' );
-        hiddenFingerprintField.setAttribute( 'name', 'fingerprint' );
-        hiddenFingerprintField.setAttribute( 'value', result );
-        $("#pin_form").append( hiddenFingerprintField );
-        $("#pin_form").submit();
+        post( '/authentications/check', {
+          pin: pin,
+          fingerprint: result,
+          token: localStorage.token,
+          driverNumber: JSON.parse(localStorage.licenceData).licence.driverNumber
+        });
   		});
     } else {
       myApp.alert( "Your PIN must be a number and at least 4 digits long");
