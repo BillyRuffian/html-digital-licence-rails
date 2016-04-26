@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   resource :authentications, only: [:create, :new] do
     post :check
   end
-  resource :verify, controller: :verify, only: [:new, :create]
+  resource :verify, controller: :verify, only: [:new] do
+    get :create
+  end
 
   root 'welcome#index'
 

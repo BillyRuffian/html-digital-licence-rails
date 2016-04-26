@@ -9,10 +9,4 @@
 .list-block
   %ul
     %li
-      = link_to 'Verify My Identity', '#', class: 'item-link list-button', onclick: 'verifyClicked()'
-
-:javascript
-  function verifyClicked()
-  {
-    post( '/verify');
-  }
+      = link_to 'Verify My Identity', verify_path, class: 'item-link list-button'
