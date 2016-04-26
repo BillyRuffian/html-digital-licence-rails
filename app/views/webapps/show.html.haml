@@ -1,2 +1,12 @@
+= content_for :additional_head_content do
+  = stylesheet_link_tag 'add_to_homescreen'
+  = javascript_include_tag 'add_to_homescreen'
+
+:javascript
+  addToHomescreen({
+    icon: false
+  });
+
+
 = react_component 'Licence'
-= react_component 'Controls', {}, { prerender: true }
+= react_component 'Controls'

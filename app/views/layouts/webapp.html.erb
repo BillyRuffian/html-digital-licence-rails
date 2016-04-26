@@ -9,6 +9,9 @@
   <title>DigitalLicence</title>
 
   <%= stylesheet_link_tag    'webapp', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= yield :additional_head_content %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
