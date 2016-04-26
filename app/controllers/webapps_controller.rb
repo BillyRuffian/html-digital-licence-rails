@@ -16,7 +16,6 @@ class WebappsController < ApplicationController
   end
 
   def ios?
-    puts request.headers['User-Agent']
     /(iPhone)|(iPad)|(iPod)/ =~ request.headers['User-Agent']
   end
 

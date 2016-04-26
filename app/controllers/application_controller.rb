@@ -16,7 +16,6 @@ class ApplicationController < ActionController::Base
     begin
       verified_token = verifier.verify driver_token
     rescue Exception => e
-      puts '*** TOKEN NOT VERIFIED'
       puts e
       redirect_to new_verify_path
       return
@@ -24,10 +23,8 @@ class ApplicationController < ActionController::Base
 
 
     if !user.blank? && !device_fingerprint.blank? && driver_number == verified_token
-      puts '*** known user'
       device = user.devices.find_by_fingerprint(device_fingerprint)
       if !device.blank?
-        puts '*** known device'
       else
         render 'authentications/pin_check'
         return

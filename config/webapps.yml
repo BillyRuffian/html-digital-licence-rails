@@ -5,4 +5,4 @@ test:
   secret: "no secret"
 
 production:
-  secret: <%= ENV['WEBAPP_SECRET'] %>
+  secret: "he sees dead people"

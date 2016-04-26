@@ -1,0 +1,760 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+/* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_shims.scss */
+.grid-row:after, .outer-block:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 18, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+#page-container {
+  max-width: 960px;
+  margin: 0 15px;
+}
+@media (min-width: 641px) {
+  /* line 18, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+  #page-container {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 1020px) {
+  /* line 18, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+  #page-container {
+    margin: 0 auto;
+  }
+}
+
+/* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+.hero-image {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 641px) {
+  /* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+  .hero-image {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+
+/* line 64, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+.grid-row {
+  margin: 0 -15px;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+/* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_shims.scss */
+.grid-row:after, .outer-block:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
+}
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+/* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_shims.scss */
+.grid-row:after, .outer-block:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+/* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_shims.scss */
+.grid-row:after, .outer-block:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 18, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+#page-container {
+  max-width: 960px;
+  margin: 0 15px;
+}
+@media (min-width: 641px) {
+  /* line 18, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+  #page-container {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 1020px) {
+  /* line 18, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+  #page-container {
+    margin: 0 auto;
+  }
+}
+
+/* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+.hero-image {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 641px) {
+  /* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+  .hero-image {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+
+/* line 64, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_grid_layout.scss */
+.grid-row {
+  margin: 0 -15px;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+/* line 46, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/_shims.scss */
+.grid-row:after, .outer-block:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+/* line 15, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.phase-banner {
+  padding: 10px 0 8px;
+  border-bottom: 1px solid #bfc1c3;
+}
+@media (min-width: 641px) {
+  /* line 15, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .phase-banner {
+    padding-bottom: 10px;
+  }
+}
+/* line 21, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_alpha-beta.scss */
+.phase-banner p {
+  display: table;
+  margin: 0;
+  color: #000;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (min-width: 641px) {
+  /* line 21, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_alpha-beta.scss */
+  .phase-banner p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+/* line 28, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_alpha-beta.scss */
+.phase-banner .phase-tag {
+  display: -moz-inline-stack;
+  display: inline-block;
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 700;
+  text-transform: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d53880;
+}
+@media (min-width: 641px) {
+  /* line 28, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_alpha-beta.scss */
+  .phase-banner .phase-tag {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+/* line 32, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_alpha-beta.scss */
+.phase-banner span {
+  display: table-cell;
+  vertical-align: baseline;
+}
+
+/* line 20, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.outer-block {
+  margin: 0 auto;
+  width: auto;
+  max-width: 1020px;
+}
+
+/* line 24, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.inner-block {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 641px) {
+  /* line 24, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .inner-block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* line 28, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.button {
+  background-color: #00823b;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.3em 0.6em 0.2em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #003618;
+  -moz-box-shadow: 0 2px 0 #003618;
+  box-shadow: 0 2px 0 #003618;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: #fff;
+}
+/* line 50, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button:visited {
+  background-color: #00823b;
+}
+/* line 54, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button:hover, .button:focus {
+  background-color: #00692f;
+}
+/* line 59, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button:active {
+  top: 2px;
+  -webkit-box-shadow: 0 0 0 #00823b;
+  -moz-box-shadow: 0 0 0 #00823b;
+  box-shadow: 0 0 0 #00823b;
+}
+/* line 65, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button.disabled, .button[disabled="disabled"], .button[disabled] {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+/* line 69, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button.disabled:hover, .button[disabled="disabled"]:hover, .button[disabled]:hover {
+  cursor: default;
+  background-color: #00823b;
+}
+/* line 74, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button.disabled:active, .button[disabled="disabled"]:active, .button[disabled]:active {
+  top: 0;
+  -webkit-box-shadow: 0 2px 0 #003618;
+  -moz-box-shadow: 0 2px 0 #003618;
+  box-shadow: 0 2px 0 #003618;
+}
+/* line 87, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button:link, .button:hover, .button:focus, .button:visited {
+  color: #fff;
+}
+/* line 106, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button:before {
+  content: "";
+  height: 110%;
+  width: 100%;
+  display: block;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 117, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button:active:before {
+  top: -10%;
+  height: 120%;
+}
+/* line 130, /Users/nbt/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/govuk_frontend_toolkit-4.10.0/app/assets/stylesheets/design-patterns/_buttons.scss */
+.button[rel="external"]:after {
+  display: none;
+  content: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 32, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+section {
+  padding-bottom: 10px;
+}
+
+/* line 37, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+h1 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 1.09375;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+@media (min-width: 641px) {
+  /* line 37, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  h1 {
+    font-size: 48px;
+    line-height: 1.04167;
+  }
+}
+@media (min-width: 641px) {
+  /* line 37, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  h1 {
+    padding-top: 7px;
+    padding-bottom: 13px;
+  }
+}
+
+/* line 42, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+h2.subtitle {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  color: #6f777b;
+}
+@media (min-width: 641px) {
+  /* line 42, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  h2.subtitle {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 641px) {
+  /* line 42, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  h2.subtitle {
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+}
+
+/* line 47, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.page-header {
+  padding: 2em 0 2em;
+}
+
+/* line 57, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.grid-row .column-third {
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 641px) {
+  /* line 57, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .grid-row .column-third {
+    float: left;
+    width: 33.33333%;
+  }
+}
+/* line 60, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.grid-row .column-two-thirds {
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 641px) {
+  /* line 60, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .grid-row .column-two-thirds {
+    float: left;
+    width: 66.66667%;
+  }
+}
+/* line 64, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.grid-row .column-quarter {
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 641px) {
+  /* line 64, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .grid-row .column-quarter {
+    float: left;
+    width: 25%;
+  }
+}
+/* line 68, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.grid-row .column-three-quarters {
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (min-width: 641px) {
+  /* line 68, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .grid-row .column-three-quarters {
+    float: left;
+    width: 75%;
+  }
+}
+
+/* line 77, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+section p:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+/* line 82, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+section .intro {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (min-width: 641px) {
+  /* line 82, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  section .intro {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+/* line 88, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+p.lede {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (min-width: 641px) {
+  /* line 88, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  p.lede {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+/* line 92, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.panel-indent {
+  clear: both;
+  border-left: 4px solid #bfc1c3;
+  padding: 10px 0 10px 15px;
+}
+
+/* line 98, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+p.error {
+  border-left: 4px solid #b10e1e;
+  color: #b10e1e;
+}
+
+/* line 103, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.form {
+  display: block;
+  overflow: auto;
+}
+
+/* line 108, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.fieldset {
+  display: block;
+  clear: both;
+  padding-top: 20px;
+}
+
+/* line 114, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.form-group {
+  margin-bottom: 30px;
+  clear: both;
+  padding-top: 20px;
+}
+
+/* line 120, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.form-label, .form-label-bold {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: block;
+}
+@media (min-width: 641px) {
+  /* line 120, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .form-label, .form-label-bold {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+/* line 127, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.form-label-bold {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 1.25;
+}
+@media (min-width: 641px) {
+  /* line 127, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .form-label-bold {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+/* line 134, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.form-hint {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  color: #6f777b;
+  display: block;
+  margin: 8px 0 5px;
+}
+@media (min-width: 641px) {
+  /* line 134, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  .form-hint {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+/* line 141, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.form-control {
+  width: 50%;
+  float: left;
+}
+
+/* line 161, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.block-label {
+  position: relative;
+  background: #dee0e2;
+  border: 1px solid #dee0e2;
+  padding: 18px 30px 15px 45px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  display: block;
+  float: left;
+  clear: both;
+}
+/* line 156, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.block-label:hover {
+  border-color: black;
+}
+
+/* line 169, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.list-label {
+  position: relative;
+  background: #dee0e2;
+  border: 1px solid #dee0e2;
+  padding: 18px 30px 15px 45px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+/* line 156, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.list-label:hover {
+  border-color: black;
+}
+
+/* line 173, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+input[type=text] {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (min-width: 641px) {
+  /* line 173, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  input[type=text] {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+/* line 178, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.field_with_errors input {
+  border: solid 4px #b10e1e;
+}
+
+/* line 183, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 187, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+table th {
+  text-align: left;
+}
+/* line 191, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+table tr {
+  border-bottom-color: #bfc1c3;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+/* line 197, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+table tr:last-child {
+  border-bottom: none;
+}
+/* line 201, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+table tr th.tabular, table tr td.tabular {
+  font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 400;
+  text-transform: none;
+  width: 50%;
+}
+@media (min-width: 641px) {
+  /* line 201, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  table tr th.tabular, table tr td.tabular {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+/* line 208, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+table td {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 400;
+  text-transform: none;
+  border-collapse: collapse;
+  display: table-cell;
+  padding-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 8px;
+  padding-top: 12px;
+  vertical-align: top;
+}
+@media (min-width: 641px) {
+  /* line 208, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+  table td {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+/* line 220, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+address {
+  font-style: normal;
+}
+
+/* line 224, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.right {
+  float: right;
+}
+
+/* line 228, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.left {
+  float: left;
+}
+
+/* line 232, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+.button-start,
+.button-get-started {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: none;
+  background-image: url(/assets/icons/icon-pointer-e5b47e034536de4f7cb71435f287b8326ea1827a19b8c01507f712503338bd90.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding: 0.3684210526em 2.1578947368em 0.2105263158em 0.8421052632em;
+}
+
+/* line 246, /Users/nbt/Projects/DVLA/DigitalLicence/app/assets/stylesheets/govuk.scss */
+#selectable-table tr {
+  cursor: pointer;
+}
