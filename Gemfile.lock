@@ -182,8 +182,8 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
-  govuk_frontend_toolkit
-  govuk_template
+  govuk_frontend_toolkit (~> 4.10.0)
+  govuk_template (~> 0.17.0)
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
