@@ -19,4 +19,6 @@ Rails.application.config.assets.precompile += %w(
   application-ie7.css
   application-ie6.css
   application.js
+  add_to_homescreen.js
+  add_to_homescreen.css
 )
