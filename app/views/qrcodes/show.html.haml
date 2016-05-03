@@ -1,0 +1,33 @@
+
+.content-block-title
+  Your QR code
+.list-block
+  %ul
+    %li.item-content
+      .item-inner.center
+        #qrcode
+
+.list-block
+  %ul
+    %li
+      = link_to 'Finish', webapps_path, class: 'item-link list-button'
+
+
+:javascript
+  document.addEventListener("DOMContentLoaded", function(event){qrcode()} );
+  document.addEventListener("page:load", function(event){qrcode()} );
+
+  var qrcode = function(){
+    var element = document.getElementById("qrcode");
+    if( element != null ){
+      element.innerHTML = "";
+    }
+    var qrcode = new QRCode(element, {
+      text: "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency",
+      width: 160,
+      height: 160,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+    });
+  };

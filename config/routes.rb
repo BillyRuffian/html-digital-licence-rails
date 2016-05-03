@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
 
-
-  get 'welcome/index'
-
   resource :webapps, only: [:show]
   resources :share_codes, only: [:create]
   resource :authentications, only: [:create, :new] do
@@ -11,6 +8,9 @@ Rails.application.routes.draw do
   resource :verify, controller: :verify, only: [:new] do
     get :create
   end
+  resource :qrcodes, only: [:show]
+
+
 
   root 'welcome#index'
 
