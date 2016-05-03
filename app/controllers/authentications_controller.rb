@@ -19,6 +19,7 @@ class AuthenticationsController < ApplicationController
     device = user.devices.find_or_create_by( fingerprint: fingerprint )
     device.save
     @token = verifier.generate( driver_number )
+    session[:user_id] = user.id
   end
 
   def check
@@ -31,11 +32,13 @@ class AuthenticationsController < ApplicationController
     user = nil
     if pin && driver_number
       user = User.find_by_driver_number_and_pin( driver_number, pin)
+      session[:user_id] = nil
     end
 
     if user
       user.devices.find_or_create_by( fingerprint: fingerprint )
-      redirect_to webapps_path
+      session[:user_id] = user.id
+      render 'checked'
     else
       flash[:notice] = 'Wrong PIN'
       render 'pin_check'
