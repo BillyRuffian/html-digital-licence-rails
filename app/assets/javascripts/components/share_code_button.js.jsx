@@ -1,4 +1,4 @@
-var Controls = React.createClass({
+var ShareCodeButton = React.createClass({
 	shareCodeClicked: function() {
 		new Fingerprint2().get( function(result,components) {
 			console.log( result );
