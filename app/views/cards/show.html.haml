@@ -2,6 +2,9 @@
   = stylesheet_link_tag 'add_to_homescreen'
   = javascript_include_tag 'add_to_homescreen'
 
-= react_component 'Licence'
-= react_component 'ShareCodeButton'
-= react_component 'QRCodeButton'
+:javascript
+  addToHomescreen({
+    icon: false
+  });
+
+= react_component 'Card'
