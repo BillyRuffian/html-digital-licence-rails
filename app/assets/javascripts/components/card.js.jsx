@@ -98,6 +98,9 @@ var Card = React.createClass({
         <div id="barcode">
           <div><img src={barcode} /></div>
         </div>
+        <div id="moreInformation">
+          <a href="/webapps">More information</a>
+        </div>
       </div>
     </div>
       );
