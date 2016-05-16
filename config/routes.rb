@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resource :cards, only: [:show]
   resource :webapps, only: [:show]
   resources :share_codes, only: [:create]
   resource :authentications, only: [:create, :new] do

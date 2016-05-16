@@ -1,0 +1,380 @@
+// Place all the styles related to the cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding: 0;
+  margin: 0;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 12px;
+line-height: 15px;
+  background: rgb(254, 220, 240);
+  color: rgb(0, 0, 0);
+}
+
+.passField label {
+  margin: 0;
+}
+.passField span {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  display: block;
+  text-align: inherit;
+  padding-right: 5px;
+}
+.passField a {
+  text-decoration: none;
+  color: #145bff;
+}
+#passFront .passField {
+  display: inline-block;
+}
+#passFront .passField label {
+  text-transform: uppercase;
+  color: black;
+  font-size: 10px;
+}
+#backFields .passField {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0 15px;
+}
+#backFields label {
+  margin: 5px 0 0;
+}
+#backFields .passField:last-child {
+  border: none;
+}
+#backFields span {
+  display: block;
+  white-space: pre-wrap;
+}
+
+#passCard > div {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.background #passCard > div:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  right: -15px;
+  top: -15px;
+  bottom: -15px;
+  z-index: -1;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+#passFront {
+  padding: 10px 15px;
+  height: 400px;
+}
+#primaryFields {
+  clear: both;
+  position: relative;
+  margin: 0 -1.2em 2em;
+  padding: 0 1.2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#primaryFields img {
+  max-height: 90px;
+  max-width: 90px;
+  float: right;
+  margin-bottom:15px;
+}
+#primaryFields span {
+  font-size: 20px;
+}
+.eventTicket #primaryFields.strip {
+  height: 84px;
+  margin-bottom: 5px;
+}
+.storeCard #primaryFields,
+.coupon #primaryFields {
+  height: 123px;
+  margin-bottom: 5px;
+}
+#primaryFields.strip .passField * {
+  color: white !important;
+}
+.boardingPass #primaryFields {
+  text-align: center;
+  height: 50px;
+}
+.boardingPass #headerFields {
+  height: 5em;
+}
+.boardingPass #primaryFields .passField {
+  position: absolute;
+  top: 0;
+}
+.boardingPass #primaryFields .passField:first-child {
+  text-align: left !important;
+  left: 1.2em;
+}
+.boardingPass #primaryFields .passField:last-child {
+  text-align: right !important;
+  right: 1.2em;
+}
+.boardingPass #primaryFields img {
+  height: 34px;
+  margin-top: 20px;
+  float: none;
+  display: inline-block;
+}
+.boardingPass #primaryFields span {
+  font-size: 40px;
+  line-height: 1em;
+}
+.eventTicket #primaryFields.strip {
+  height: 84px;
+}
+.eventTicket #primaryFields.strip label {
+  display: none;
+}
+.eventTicket #primaryFields.strip span {
+  font-size: 60px;
+  line-height: 80px;
+  color: white !important;
+}
+.storeCard #primaryFields .passField *,
+.coupon #primaryFields .passField * {
+  color: white;
+}
+.storeCard #primaryFields span,
+.coupon #primaryFields span {
+  font-size: 65px;
+}
+.storeCard #primaryFields label,
+.coupon #primaryFields label {
+  text-transform: none;
+  position: absolute;
+  bottom: 35px;
+  font-size: 15px;
+}
+#auxiliaryFields > div,
+#secondaryFields > div {
+  text-align: justify;
+  clear: both;
+}
+#auxiliaryFields > div:after,
+#secondaryFields > div:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+#headerFields {
+  text-align: right;
+  height: 4em;
+  position: relative;
+  margin-bottom: 15px;
+}
+#headerFields img {
+  max-height: 50px;
+  max-width: 250px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#headerFields h1 {
+  float: left;
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1.75em;
+  margin-left: 90px;
+}
+#headerFields .passField {
+  margin-left: 10px;
+}
+#passFront hr {
+  clear: left;
+}
+#barcode {
+  text-align: center;
+  position: absolute;
+  bottom: 0em;
+  left: 0;
+  right: 0;
+  min-height: 70px;
+  display: inline-block;
+}
+#barcode:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 15px;
+  margin-bottom: 2px;
+  display: block;
+}
+#barcode > div {
+  padding: 7px;
+  background: white;
+  color: black;
+  margin: auto;
+  display: inline-block;
+  border-radius: 5px;
+}
+#barcode img {
+  max-height: 120px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+#barcode h1 {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 80px;
+  margin: 0 auto;
+}
+#barcode div div {
+  font-size: 14px;
+  color: black;
+}
+.voided #barcode div img,
+.voided #barcode div h1 {
+  opacity: 0.2;
+}
+.voided #barcode .altText {
+  display: none;
+}
+.voided #barcode div div {
+  color: red;
+}
+#passBack {
+  padding: 6px;
+  height: 408px;
+}
+#passBack > a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+#backFields {
+  margin-top: 33px;
+  border-radius: 10px;
+  padding-left: 1.5em;
+  background: white;
+  color: gray;
+  padding-bottom: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 345px;
+  width: 290px;
+}
+.infoButton {
+  color: inherit;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  line-height: 18px;
+  float: right;
+  font-family: serif;
+  font-weight: bold;
+}
+#passFront .infoButton {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+.editorFields {} .controlElement {
+  margin-bottom: 0.5em;
+  clear: right;
+  position: relative;
+}
+.controlElement h3 {
+  position: absolute;
+  margin: 1em;
+  top: 0;
+  left: 0;
+  font-size: inherit;
+}
+.controlElement .infoButton {
+  color: black;
+  font-weight: normal;
+  border-color: black;
+  background: #ccc;
+  margin: 5px;
+}
+.controlElement .advanced {
+  display: none;
+  background: #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.controlElement .advanced.expanded,
+.editable .editableOptions {
+  display: block;
+}
+.editableOptions,
+.advanced .infoButton {
+  display: none;
+}
+.advanced.expanded + label {
+  margin-top: 0;
+}
+.advanced.expanded label:first-child {
+  margin-top: 0;
+}
+.optionsEditor {
+  text-align: center;
+}
+.optionsEditor div * {
+  width: 45% !important;
+  display: inline !important;
+}
+.editorFields .optionsEditor div span.button {
+  padding: 5px 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.controlElement textarea {
+  font-size: 1em;
+  padding: 0.5em;
+}
+.PSAdditional .controlElement label {
+  margin: 0;
+}
+.collapsible {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 2.2em;
+}
+.collapsible h2 {
+  cursor: pointer;
+}
+.collapsible h2:before {
+  content: "▸ ";
+}
+.collapsible.expanded {
+  height: auto;
+}
+.collapsible.expanded h2:before {
+  content: "▾ ";
+}
+
+#passFront .passField label {
+}
+#passFront .infoButton {
+  border-color: rgb(0, 0, 0);
+}
+#images img {
+  background: rgb(254, 220, 240);
+}
