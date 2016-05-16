@@ -54,6 +54,7 @@ var Card = React.createClass({
   },
 
   render: function() {
+    var barcode = "http://generator.barcodetools.com/barcode.png?gen=3&ecl=0&data=https%3A%2F%2Fwww.gov.uk%2Fgovernment%2Forganisations%2Fdriver-and-vehicle-licensing-agency%3Fdid%3D" + this.state.licence.driverNumber + "&xdim=10&bcolor=FFFFFF&fcolor=000000"
     if( this.state.status.doneLoading ) {
       return (
         <div id="passCard">
@@ -95,7 +96,7 @@ var Card = React.createClass({
           </div>
         </div>
         <div id="barcode">
-          <div><img src="http://generator.barcodetools.com/barcode.png?gen=2&amp;data=eNortjIysVIy9HaJ9AlM8oxwdXQLKitLNIwI9TEOtLVVsgZcMJXrCRk%2C&amp;col=2&amp;row=0&amp;bcolor=FFFFFF&amp;fcolor=000000&amp;y2x=4.0&amp;xdim=2&amp;w=&amp;h=&amp;cmode=0&amp;ecl=9&amp;cpdf=0&amp;angle=0&amp;quiet=1&amp;alignh=1&amp;alignv=1" /></div>
+          <div><img src={barcode} /></div>
         </div>
       </div>
     </div>

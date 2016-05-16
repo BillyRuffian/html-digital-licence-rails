@@ -61,3 +61,24 @@ body {
     width: 33%;
   }
 }
+
+#auxiliaryFields{
+  clear: both;
+  padding-top: 50px;
+
+  .passField{
+    span {
+      text-align: left;
+      line-height: 70px;
+    }
+  }
+}
+
+#barcode {
+   position:fixed;
+   text-align: center;
+   left:0px;
+   bottom:0px;
+   height:500px;
+   width:100%;
+}
