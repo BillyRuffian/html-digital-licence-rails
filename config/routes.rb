@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'developers/index'
+
+  post 'developers/reset_token'
+
+  post 'developers/reset_fingerprint'
+
   resource :cards, only: [:show]
   resource :webapps, only: [:show]
   resources :share_codes, only: [:create]
